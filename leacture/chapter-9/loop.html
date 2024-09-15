@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops</title>
+  </head>
+  <body>
+    <script>
+      let num = 0; //Initialization
+      while (num < 2) {
+        //condition
+        console.log(num);
+        num = Math.random() * 3; //updation
+      }
+
+      let n = 0;
+      do {
+        console.log("hi");
+      } while (n > 10);
+
+      //for (Initialization , condition , updation )
+      for (let i = 0; i <= 10; i++) {
+        console.log(i);
+      }
+
+      //Array ke value ko access karne ke liye for loop ka use kiya jata ha.
+      let arr = [1, 2, 3, 4, 5, 6];
+      for (let index = 0; index < arr.length; index++) {
+        console.log(arr[index]);
+      }
+      
+
+    //   Accumlator patter
+      let arr1 = [1, 2, 3, 4, 5, 6];
+      sum = 0;
+      for (let index = 0; index < arr1.length; index++) {
+        sum = sum + arr1[index];
+      }
+      console.log("Sum is " + sum);
+
+
+      //continue statement
+      
+      for (let i = 0; i <=10; i++) {
+        if (i % 2 === 0) {
+            continue;
+        }
+        console.log(i);
+      }
+
+    </script>
+  </body>
+</html>

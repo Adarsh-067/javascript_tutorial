@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice set</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            text-align: center;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h2>Hello JavaScript!</h2>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <script>
+        let heading = document.querySelector("h2");
+        heading.innerText =  heading.innerText +" from Apna collage student" 
+
+        let divs = document.querySelectorAll(".box");
+        console.log(divs);
+        // divs[0].innerText = 'first box';
+        // divs[1].innerText = 'second box';
+        // divs[2].innerText = 'third box';
+        for (divs of divs) {
+            divs.innerText = 'first box';
+        }
+        
+    </script>
+</body>
+</html>

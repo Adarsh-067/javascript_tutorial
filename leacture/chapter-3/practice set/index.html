@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circkit Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bat Ball Stump Game</h1>
+    <button onclick=" let userChoise = 'Bat';
+    let randomNum = Math.random()*3;
+    let computerChoice;
+    if (randomNum > 0 && randomNum <= 1) {
+        computerChoice = 'Bat';
+    }else if (randomNum > 1 && randomNum >=2) {
+        computerChoice = 'Ball';
+    }else{
+        computerChoice = 'Stump';
+    }
+    // console.log(`computer choice ${computerChoice}`);
+    let result;
+    if (computerChoice ==='Bat') {
+        result = ('It is a tie');
+    }else if (computerChoice === 'Ball') {
+        result = ('User Win');
+    }else if (computerChoice === 'Stump') {
+        result = ('Computer has Won');
+    } 
+    alert(`User Choice Bat , Computer Choice ${computerChoice} , The Result is ${result}`);  
+    ">Bat</button>
+
+    <button onclick="let userChoise1 = 'Ball';
+    let randomNum1 = Math.random()*3;
+    let computerChoice1;
+    if (randomNum1 > 0 && randomNum1 <= 1) {
+        computerChoice1 = 'Bat';
+    }else if (randomNum1 > 1 && randomNum1 >=2) {
+        computerChoice1 = 'Ball';
+    }else{
+        computerChoice1 = 'Stump';
+    }
+    // console.log(`computer choice ${computerChoice}`);
+    let result1;
+    if (computerChoice1 ==='Bat') {
+        result1 = ('Computer has Won');
+    }else if (computerChoice1 === 'Ball') {
+        result1= ('It is a tie');
+    }else if (computerChoice1 === 'Stump') {
+        result1 = ('User Won');
+    } 
+    alert(`User Choice Ball , Computer Choice ${computerChoice1} , The Result is ${result1}`);">Ball</button>
+
+    <button onclick="let userChoise2 = 'Stump';
+    let randomNum2 = Math.random()*3;
+    let computerChoice2;
+    if (randomNum2 > 0 && randomNum2 <= 1) {
+        computerChoice2 = 'Bat';
+    }else if (randomNum2 > 1 && randomNum2 >=2) {
+        computerChoice2 = 'Ball';
+    }else{
+        computerChoice2 = 'Stump';
+    }
+    // console.log(`computer choice ${computerChoice}`);
+    let result2;
+    if (computerChoice2 ==='Bat') {
+        result2 = ('User Won');
+    }else if (computerChoice2 === 'Ball') {
+        result2 = ('Computer has Won');
+    }else if (computerChoice2 === 'Stump') {
+        result2 = ('It is a tie');
+    } 
+    alert(`User Choice Stump , Computer Choice ${computerChoice2} , The Result is ${result2}`); 
+    
+    ">Stump</button>
+</body>
+</html>

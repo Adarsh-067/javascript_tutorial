@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>setTimeOut and setInterval</title>
+  </head>
+  <body>
+    <script>
+      //------------------------------------Asynchronous code Execution-------------------------------//
+      //using set Time out function.
+
+      timeoutID = setTimeout(() => {
+        console.log("Hello2!");
+        console.log("featching data3....");
+      }, 4000);
+
+      // console.log('Hello!');
+      // console.log('featching data2....')
+      timeoutID2 = setTimeout(() => {
+        console.log("Hello3!");
+      }, 5000);
+
+      clearTimeout(timeoutID); //Remove or Clear setTimeout function to Execution.
+      clearTimeout(timeoutID2);
+
+      //using set Interval function.
+
+      intervalID = setInterval(() => {
+        console.log("Say Hi!");
+      }, 3000);
+
+      clearInterval(intervalID); //Remove or Clear setInverval function to Execution.
+      
+    //   const getData = (id)=>{
+    //     console.log(`fetching data ${id}....`);
+    //     for (let i = 0; i < 5; i++) {
+    //       setTimeout(() => {
+    //     console.log(`data ${id}`);
+    //   }, 3000);
+    //  }
+    //   }
+    </script>
+  </body>
+</html>

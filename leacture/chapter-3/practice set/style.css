@@ -1,0 +1,21 @@
+body{
+    border: 2px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    border-bottom: 2px dashed rgb(97, 85, 69);
+    display: block;
+}
+button{
+    font-size: 15px;
+    padding: 5px 15px;
+    margin: 5px;
+    background-color: darkcyan;
+    color: #ffffffcc;
+    border: none;
+    border-radius: 7px;
+}

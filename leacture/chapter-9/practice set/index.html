@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice set</title>
+</head>
+<body>
+    <script>
+        let arr = [5,6];
+        arr.unshift(4);
+        arr.push(7);
+        console.log(arr);
+
+        function getData(arr , position) {
+            return arr[position-1];
+        }
+        arr = [1,2,3,4,5,6,7,8,9];
+        console.log(getData(arr,3));
+
+        function copyArr(num) {
+            return num.slice(0 , num.length-2);
+        };
+        let num = [1,2,3,4,5,6,7];
+        console.log(copyArr(num));
+        console.log(num);
+        
+        function isPrime(num1) {
+            for (let i = 2; i < num1; i++) {
+                if (num1 % i === 0) {
+                    return false;
+                }else{
+                    return true;
+                }
+            }
+        }
+     
+       let num1 = 2;
+       let i=0;
+       while (i<5) {
+        if (isPrime(num1)) {
+            console.log(num1);
+            i++;
+        }
+        num1++;
+       }
+
+       for (let i = 0; i < 10; i++) {
+           console.log(10-i);
+       };
+
+       let arr1 = [1,-6,5,7,-98];
+       for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i]<0) continue;
+        console.log(arr1[i]);
+       }
+
+       let con = ['hello' , 'ram' , 'how' , 'are' , 'you'];
+       let result = '';
+       for (let i = 0; i < con.length; i++) {
+         result = result + con[i] + ' ';
+       }
+       console.log(result);
+    </script>
+</body>
+</html>

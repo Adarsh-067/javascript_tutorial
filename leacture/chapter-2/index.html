@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>if else statement</title>
+  </head>
+  <body>
+    <script>
+      // if else statement
+      let num = 9;
+      if (num % 2 === 0) {
+        console.log("This number is even");
+      } else {
+        console.log("This number is odd");
+      }
+
+      // Nesting of if else statement
+
+      let age = 49;
+      if (age > 18) {
+        if (age <= 60) {
+          console.log("middle Age");
+        } else {
+          console.log("senior citizen");
+        }
+      } else {
+        console.log("you a child");
+      }
+
+      // if else ladder statement
+
+      let per = 55;
+      if (per > 60) {
+        console.log("you have passed first divison");
+      } else if (per < 60 && per > 45) {
+        console.log("you have passed second divison");
+      } else if (per < 45 && per > 33) {
+        console.log("you have passed third divison");
+      } else {
+        console.log("fail");
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice set 2</title>
+    <style>
+        #btn{
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .even{
+            background-color: blueviolet;
+        }
+        .odd{
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="display"></h2>
+    <button id="btn" onclick="button()"></button>
+    <script>
+       function get(name) {
+        let date = new Date();
+        let hours = date.getHours();
+        let heading = document.querySelector('#display');
+        if (hours >5 && hours <12) {
+            heading.innerText = `Good Morning ${name}`;
+        }else if (hours>=12 && hours<18) {
+            heading.innerText = `Good Afternoon ${name}`;
+        }else{
+            heading.innerText = `Good Night ${name}`;
+        }
+       };
+       get('Adarsh');
+      
+       let noOfClick = localStorage.getItem('noOfClick') || 0;
+      function button(params) {
+        noOfClick++;
+        localStorage.setItem('noOfClick', noOfClick)
+        // localStorage.clear();
+        update();
+    }
+    
+    function update(params) {
+        let btn = document.querySelector("#btn");
+        if (noOfClick % 2 === 0) {
+            btn.classList.add('even');
+            btn.classList.remove('odd');
+        }else{
+            btn.classList.add('odd');
+            btn.classList.remove('even');
+        }
+        btn.innerText = noOfClick;
+      }
+      update();
+    </script>
+</body>
+</html>

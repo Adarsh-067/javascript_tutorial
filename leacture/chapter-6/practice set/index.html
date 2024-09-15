@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice set</title>
+</head>
+<body>
+    <script>
+        let product={
+            company:'Levis',
+            price:1599,
+            Item_name:'hoody',
+            'delivery-time':'same day delivery',
+        };
+        console.log(product);
+        let copyProduct = product;
+        copyProduct.company = 'zara';
+        console.log(product);
+        copyProduct.price = 1999;
+        console.log(product);
+        console.log(product['delivery-time']);
+
+        let obj={
+            message:'good job',
+            status:'complete'
+        }
+        console.log(obj);
+
+        let {message}=obj;
+        console.log(message);
+        let {status}=obj;
+        console.log(status);
+    </script>
+</body>
+</html>

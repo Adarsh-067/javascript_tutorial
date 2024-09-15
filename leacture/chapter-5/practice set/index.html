@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice set</title>
+</head>
+<body>
+    <script>
+        // find Even and odd Number
+        function findEvenAndOddNum(a) {
+            let result = a % 2 == 0 ? `${a} is a even number` : `${a} is a odd number`;
+            return result;
+        }
+        console.log(findEvenAndOddNum(5));
+        console.log(findEvenAndOddNum(2));
+        console.log(findEvenAndOddNum(6));
+        console.log(findEvenAndOddNum(7));
+       
+        // find large of the two Number
+        function findLargeNumber(a,b) {
+            let result = a > b ? `${a} is larger than ${b}` : `${b} is larger than ${a}`;
+            return result;
+        }
+        console.log(findLargeNumber(5,10));
+        console.log(findLargeNumber(50,10));
+        console.log(findLargeNumber(50,100));
+        console.log(findLargeNumber(5,1));
+
+       // convert celsius to fahrenhiet
+       function converter(c) {
+        return 9/5*c+32;
+       }
+       console.log(converter(35));
+       console.log(converter(25));
+       console.log(converter(30));
+       console.log(converter(3));
+    </script>
+</body>
+</html>

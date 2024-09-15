@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice set 2</title>
+    <style>
+        .myPara{
+            color: blue;
+        }
+
+        .newPara{
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <p class="myPara">I am para?</p>
+    <script>
+        let btn = document.createElement("button");
+        btn.innerText = 'click me!';
+        btn.style.backgroundColor = 'red';
+        btn.style.Color = 'white';
+
+        document.querySelector('body').prepend(btn);
+
+        console.log(document.querySelector(".myPara").classList);
+
+       console.log( document.querySelector(".myPara").classList.add('newpara'));
+       
+    </script>
+</body>
+</html>
